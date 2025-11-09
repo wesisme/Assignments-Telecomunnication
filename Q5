@@ -1,0 +1,45 @@
+A company needs a program that reads an employee’s name, hours worked and rate per hour.
+The program should calculate the basic pay (hours worked × rate per hour).
+
+Tax is based on basic pay as follows:
+
+Basic Pay	Tax Rate
+
+Over 50000	20% of basic pay
+20000 – 50000	10% of basic pay
+Below 20000	Zero tax
+
+
+Write a Python program that:
+
+1. Asks the user to enter employee name, hours worked and rate per hour
+
+
+2. Calculates the basic pay
+
+
+3. Uses an if…else statement to determine tax
+
+
+4. Calculates net pay (net pay = basic pay − tax)
+
+
+name = input("Enter employee name: ")
+hours = float(input("Enter hours worked: "))
+rate = float(input("Enter rate per hour: "))
+
+basic = hours * rate
+
+if basic > 50000:
+    tax = basic * 0.20
+elif basic >= 20000:
+    tax = basic * 0.10
+else:
+    tax = 0
+
+net = basic - tax
+
+print("Name:", name)
+print("Basic Pay:", basic)
+print("Tax:", tax)
+print("Net Pay:", net)
