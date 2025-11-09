@@ -1,0 +1,10 @@
+Write a Python program that asks the user to enter a list of names.
+The program should then sort the names alphabetically, remove any duplicates, and display the final sorted list.
+Finally, display the total number of names entered by the user.
+
+
+names = input("Enter names separated by spaces: ").split()
+names = list(set(names))
+names.sort()
+print("Sorted names:", names)
+print("Total number of names:", len(names))
