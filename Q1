@@ -1,0 +1,27 @@
+
+i. Create a class named Animal that has a method fur() which displays a message “I have fur all over my body.”
+
+ii. Create another class named Dog that inherits from Animal and has a method bark() that displays “Dog barking.”
+
+iii. Create another class named Puppy that inherits from Dog and has a method play() that displays “I play all the time.”
+
+iv. Create an instance of the Puppy class and call the methods play(), bark(), and fur() in that order.
+
+
+
+class Animal:
+    def fur(self):
+        print("I have fur all over my body.")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog barking.")
+
+class Puppy(Dog):
+    def play(self):
+        print("I play all the time.")
+
+bosco = Puppy()
+bosco.play()
+bosco.bark()
+bosco.fur()
